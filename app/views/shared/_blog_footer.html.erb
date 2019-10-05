@@ -1,0 +1,10 @@
+<footer class="blog-footer">
+	<p><%= @copyright %></p>
+	<p>
+	<a href="#">Back to top</a>
+	</p>
+	</footer>
+
+	<% if session[:source] %>
+	<p>Thanks for visiting me from <%= session[:source] %></p>
+<% end %>

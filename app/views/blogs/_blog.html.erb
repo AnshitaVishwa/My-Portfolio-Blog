@@ -1,0 +1,13 @@
+<div class="blog-post">
+            <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
+            <p class="blog-post-meta">Published<%= distance_of_time_in_words(blog.created_at, Time.now) %></p>
+            <p class="blog-post-meta"><%= link_to blog.status, toggle_status_blog_path(blog) %></p> 
+            <p class="blog-post-meta">	<%= link_to 'Edit', edit_blog_path(blog) %></td></p> 
+            <p class="blog-post-meta">	<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            	
+            </p>
+            <p><%= blog.body %></p>
+            <hr>
+
+
+
